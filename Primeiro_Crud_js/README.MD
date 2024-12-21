@@ -28,7 +28,7 @@ Primeiro_Crud_js/
 
 ## Tecnologias usadas
 
--Node.js
+- Node.js
 - Expresso.js
 - UUID para gerar IDs exclusivos
 
