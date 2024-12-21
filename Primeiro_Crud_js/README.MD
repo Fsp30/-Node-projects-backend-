@@ -29,7 +29,7 @@ Primeiro_Crud_js/
 ## Tecnologias usadas
 
 - Node.js
-- Expresso.js
+- Express.js
 - UUID para gerar IDs exclusivos
 
 ## Começando
