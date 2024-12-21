@@ -65,7 +65,7 @@ O servidor começará a rodar em `http://localhost:3000`.
   "id": "string",
   "nome": "string",
   "e-mail": "string",
-  "idade": número
+  "idade": number
 }
 
 ```
@@ -78,8 +78,8 @@ E-mail: Obrigatório, formato de e-mail válido
 Idade: obrigatório, número inteiro positivo
 
 
-###Tratamento de erros
+### Tratamento de erros
 O aplicativo fornece respostas de erro apropriadas para entradas inválidas e recursos não encontrados.
 
-###Contribuindo
+### Contribuindo
 Contribuições, problemas e solicitações de recursos são bem-vindos. Sinta-se à vontade para verificar a isseus page se quiser contribuir.
