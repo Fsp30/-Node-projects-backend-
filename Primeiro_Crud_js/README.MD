@@ -68,7 +68,7 @@ O servidor começará a rodar em `http://localhost:3000`.
   "idade": número
 }
 
-
+```
 
 ### Validação de entrada
 O aplicativo inclui validação de entrada básica para criação e atualização de usuários:
