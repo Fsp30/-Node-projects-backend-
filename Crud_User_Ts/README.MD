@@ -24,8 +24,8 @@ Este é um projeto simples que implementa um CRUD (Create, Read, Update, Delete)
 
 1. Clone o repositório:
    ```bash
-   git clone <url-do-repositorio>
-   cd <nome-do-projeto>
+   git clone https://github.com/Fsp30/-Node-projects-backend-.git
+   cd Crud_User_Ts
    ```
 
 2. Instale as dependências:
