@@ -24,6 +24,7 @@ Os projetos estão organizados em subpastas e categorizados pelo nível de compl
 - Integração com bancos de dados (SQL e NoSQL)  
 - Autenticação e autorização  
 - Testes automatizados  
+- Bibliotecas nativas do **Node.js**  
 
 
 ## Como Executar os Projetos
