@@ -80,7 +80,7 @@ Este projeto foi desenvolvido como parte da iniciativa **Projetos Backend Nútil
    ```
 
 5. O servidor estará disponível em:  
-   `http://localhost:3000`
+   `http://localhost:4000`
 
 ---
 
