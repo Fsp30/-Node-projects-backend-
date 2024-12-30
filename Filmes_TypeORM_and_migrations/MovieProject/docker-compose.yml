@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: movie_db
+    ports:
+      - "5432:5432"

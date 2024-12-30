@@ -1,0 +1,27 @@
+{
+   "name": "movie-project",
+   "version": "1.0.0",
+   "description": "Projeto Filmes API",
+   "main": "dist/index.js",
+   "scripts": {
+     "dev": "ts-node-dev --respawn src/index.ts",
+     "build": "tsc",
+     "start": "node dist/index.js",
+     "typeorm": "ts-node ./node_modules/.bin/typeorm"
+   },
+   "dependencies": {
+     "express": "^4.18.2",
+     "pg": "^8.11.0",
+     "reflect-metadata": "^0.1.13",
+     "typeorm": "^0.3.18"
+   },
+   "devDependencies": {
+     "@types/express": "^4.17.17",
+     "ts-node": "^10.9.1",
+     "ts-node-dev": "^2.0.0",
+     "typescript": "^5.2.2"
+   },
+   "author": "Seu Nome",
+   "license": "ISC"
+ }
+ 
