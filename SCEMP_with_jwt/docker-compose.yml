@@ -1,0 +1,12 @@
+
+services:
+  db:
+    image: postgres:latest
+    container_name: stock-management-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: stock_management
+    ports:
+      - "5432:5432"

@@ -1,0 +1,58 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            String         @id @default(uuid())
+  name          String
+  email         String         @unique
+  password      String
+  role          Role
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  inventoryLogs InventoryLog[]
+}
+
+model Product {
+  id            String         @id @default(uuid())
+  name          String
+  description   String?
+  quantity      Int
+  category      Category
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  inventoryLogs InventoryLog[]
+}
+
+model InventoryLog {
+  id        String   @id @default(uuid())
+  action    Action
+  quantity  Int
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  productId String
+  product   Product  @relation(fields: [productId], references: [id])
+  createdAt DateTime @default(now())
+}
+
+enum Role {
+  ADMIN
+  EMPLOYEE
+}
+
+enum Category {
+  ELETRONICOS
+  ALIMENTOS
+  ROUPAS
+  OUTROS
+}
+
+enum Action {
+  ADD
+  REMOVE
+}
