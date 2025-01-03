@@ -98,7 +98,7 @@ Sinta-se à vontade para contribuir! Basta abrir um pull request ou criar uma is
 ---
 
 ## **Licença**
-Este projeto está licenciado sob a [ISC](LICENSE).
+Este projeto está licenciado sob a [ISC](LICENSE) .
 
 ---
 
