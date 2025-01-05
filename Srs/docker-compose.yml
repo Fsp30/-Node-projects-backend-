@@ -1,0 +1,12 @@
+
+services:
+  db:
+    image: postgres:latest
+    container_name: Test
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: Sistemas_gerenciamento_de_salas
+    ports:
+      - "5432:5432"
