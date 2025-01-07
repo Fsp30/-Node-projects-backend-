@@ -1,0 +1,12 @@
+
+services:
+  db:
+    image: postgres:latest
+    container_name: email
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: email
+    ports:
+      - "5432:5432"

@@ -24,7 +24,7 @@ Um sistema de gerenciamento de tarefas desenvolvido com Node.js, TypeScript e Pr
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Fsp30/-Node-projects-backend-.git
-   cd task-manager
+   cd G_tasks_with_tests
    ```
 
 2. Instale as dependências:
@@ -35,7 +35,7 @@ Um sistema de gerenciamento de tarefas desenvolvido com Node.js, TypeScript e Pr
 3. Configure o banco de dados no arquivo `.env`:
    ```env
    DATABASE_URL="postgresql://user:password@localhost:5432/taskmanager"
-   JWT_SECRET="sua_chave_secreta"
+   JWT_SECRET="jwt_key"
    ```
 
 4. Execute as migrações do Prisma:
@@ -98,7 +98,7 @@ Sinta-se à vontade para contribuir! Basta abrir um pull request ou criar uma is
 ---
 
 ## **Licença**
-Este projeto está licenciado sob a [ISC](LICENSE).
+Este projeto está licenciado sob a [ISC](LICENSE) .
 
 ---
 
