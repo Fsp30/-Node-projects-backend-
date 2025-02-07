@@ -30,3 +30,5 @@ Os projetos estão organizados em subpastas e categorizados pelo nível de compl
 ## Como Executar os Projetos
 
 Cada projeto contém um arquivo `README.md` próprio com instruções detalhadas. 
+
+- Hoje dia 06/02/25 eu pretendia enviar um projeto com o meu primeiro contato com nestjs aqui, porém como tudo está dando errado na minha  vida, deu errado, mas não vou desistir logo mais irei subir esse projeto 
