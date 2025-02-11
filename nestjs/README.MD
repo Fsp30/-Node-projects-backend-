@@ -10,11 +10,19 @@ Este repositório contém a API backend para uma plataforma fictícia de ensino 
 - **Docker** - Para gerenciamento do banco de dados
 - **Thunder Client** - Para testes de API
 
-## 🔥 Status Atual - Versão `1.0.0`
-O backend está na **versão 1.0.0**, contendo:
+## 🔥 Status Atual - Versão `1.0.3`
+O backend está na **versão 1.0.1**, contendo:
 - CRUD inicial para usuários
 - Conexão com PostgreSQL via Docker
 - Arquitetura básica estruturada com módulos e serviços
+- **1.0.1** → Inclusão de testes automatizados
+- **1.0.2** → Implementação de DTOs (Data Transfer Objects)
+- **1.0.3** → Atualização de testes (se adaptando as DTOs)
+
+## 📅 Próximas Atualizações
+- **1.2.0** → Migração da API para GraphQL
+- **Futuro** → Outras melhorias e novos recursos
+
 
 ## 📅 Próximas Atualizações
 - **1.0.1** → Inclusão de testes automatizados
