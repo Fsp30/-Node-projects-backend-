@@ -1,14 +1,16 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, NotFoundException } from '@nestjs/common';
 import { UsersService } from './users.service'
 import { User } from './entities/user.entity'
+import { CreateUserDto } from './dto/create-user.dto'
+import { UpdateUserDto } from './dto/update-user.dto'
 
 @Controller('users')
 export class UsersController{
   constructor(private readonly usersService:UsersService){}
 
   @Post()
-  async create(@Body() body:{name:string, email:string}):Promise<User>{
-    return this.usersService.createUser(body.name, body.email)
+  async create(@Body() createUserDto:CreateUserDto):Promise<User>{
+    return this.usersService.createUser(createUserDto)
   } 
 
   @Get()
@@ -24,9 +26,8 @@ export class UsersController{
   }
 
   @Patch(':id')
-  async updateUser(@Param('id') id:number, @Body() body:{ name?:string, email?:string}):Promise<User>{
-    const user = await this.usersService.updateUser(+id, body.name, body.email)
-    return user
+  async updateUser(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
+    return this.usersService.updateUser(+id, updateUserDto)
   }
 
   @Delete(':id')

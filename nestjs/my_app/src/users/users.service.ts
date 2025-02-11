@@ -2,6 +2,8 @@ import { Injectable, NotFoundException } from "@nestjs/common";
 import { User } from "./entities/user.entity";
 import { Repository } from "typeorm";
 import { InjectRepository } from "@nestjs/typeorm";
+import { CreateUserDto } from './dto/create-user.dto'
+import { UpdateUserDto } from "./dto/update-user.dto";
 
 @Injectable()
 export class UsersService {
@@ -10,8 +12,8 @@ export class UsersService {
     private readonly userRepository: Repository<User>,
   ){}
 
-  async createUser(name:string, email:string):Promise<User>{
-    const user = await this.userRepository.create({name, email})
+  async createUser(createUserDto: CreateUserDto):Promise<User>{
+    const user = await this.userRepository.create(createUserDto)
     return this.userRepository.save(user)
   }
 
@@ -25,11 +27,10 @@ export class UsersService {
     return user
   }
 
-  async updateUser(id:number, name?:string, email?:string):Promise<User>{
+  async updateUser(id:number, updateUser: UpdateUserDto):Promise<User>{
     const user = await this.userRepository.findOne({where: {id}})
     if(!user) throw new NotFoundException(`Usuário não encontrado id:#${id}`)
-    if(name) user.name = name
-    if(email) user.email = email
+    Object.assign(user,updateUser)
     return this.userRepository.save(user)
   }
 
