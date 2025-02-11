@@ -16,7 +16,8 @@ import { User } from './users/entities/user.entity';
       password: 'password',
       database:'mydb',
       autoLoadEntities: true,
-      synchronize: true,
+      synchronize: false,
+      migrationsRun: true,
     }),
     UsersModule
   ],
