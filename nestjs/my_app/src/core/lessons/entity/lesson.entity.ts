@@ -1,5 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn, ManyToOne, ManyToMany } from "typeorm"
-import { Modules } from "./module.entity"
+import { Modules } from "../../module/entities/module.entity"
 
 @Entity('lesson')
 export class Lesson{

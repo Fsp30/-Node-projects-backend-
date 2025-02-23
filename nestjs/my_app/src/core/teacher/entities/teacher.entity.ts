@@ -1,5 +1,5 @@
 import {Column, Entity, PrimaryGeneratedColumn, ManyToMany} from 'typeorm'
-import {Course} from './course.entity'
+import {Course} from '../../course/entities/course.entity'
 
 @Entity('teacher')
 export class Teacher{

@@ -1,6 +1,6 @@
 import {Entity, PrimaryGeneratedColumn, ManyToOne, Column} from 'typeorm'
-import { User } from './user.entity'
-import { Lesson } from './lesson.entity'
+import { User } from '../../users/entities/user.entity'
+import { Lesson } from '../../lessons/entity/lesson.entity'
 
 @Entity('progessLesson')
 export class ProgressLesson{

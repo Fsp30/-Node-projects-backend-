@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, ManyToOne, Column } from 'typeorm'
-import { User } from './user.entity'
-import { Course } from './course.entity'
+import { User } from '../../users/entities/user.entity'
+import { Course } from '../../course/entities/course.entity'
 
 @Entity('comments')
 export class Comments{

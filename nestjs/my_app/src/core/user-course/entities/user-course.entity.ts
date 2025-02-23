@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, ManyToMany, Column } from "typeorm"
-import { User } from "./user.entity"
-import { Course } from "./course.entity"
+import { User } from "../../users/entities/user.entity"
+import { Course } from "../../course/entities/course.entity"
 import { StatusCourse } from "src/enums/status-courses"
 
 @Entity('userCourse')

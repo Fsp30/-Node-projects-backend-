@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn, ManyToMany, OneToMany, JoinTable } from 'typeorm'
-import { Teacher } from './teacher.entity'
-import {Modules} from './module.entity'
+import { Teacher } from '../../teacher/entities/teacher.entity'
+import {Modules} from '../../module/entities/module.entity'
 
 @Entity('courses')
 export class Course{
