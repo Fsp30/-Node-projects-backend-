@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Course } from '../course/entities/course.entity';
-import { CourseRepository } from '../course/repository/course.repository';
+import { Course } from '../core/course/entities/course.entity';
+import { CourseRepository } from '../core/course/repository/course.repository';
 
 @Module({
     imports:[TypeOrmModule.forFeature([Course])],

@@ -12,15 +12,15 @@ import { Modules } from './core/module/entities/module.entity';
 import { ProgressLesson } from './core/progress-lesson/entities/progress-lesson.entity';
 import { Teacher } from './core/teacher/entities/teacher.entity';
 import { UserCourse } from './core/user-course/entities/user-course.entity';
-import { CertificateModule } from './core/modules/certificate.module';
-import { CommentModule } from './core/modules/comment.module';
-import { CourseModule } from './core/modules/course.module';
-import { LessonModule } from './core/modules/lesson.module';
-import { ModuleModule } from './core/modules/module.module';
-import { ProgressLessonModule } from './core/modules/progress-lesson.module';
-import { TeacherModule } from './core/modules/teacher.module';
-import { UserCourseModule } from './core/modules/user-course.module';
-import { UserModule } from './core/modules/user.module';
+import { CertificateModule } from './modules/certificate.module';
+import { CommentModule } from './modules/comment.module';
+import { CourseModule } from './modules/course.module';
+import { LessonModule } from './modules/lesson.module';
+import { ModuleModule } from './modules/module.module';
+import { ProgressLessonModule } from './modules/progress-lesson.module';
+import { TeacherModule } from './modules/teacher.module';
+import { UserCourseModule } from './modules/user-course.module';
+import { UserModule } from './modules/user.module';
 
 
 @Module({

@@ -7,9 +7,6 @@ export class Comments{
     @PrimaryGeneratedColumn()
     id:number
 
-    @ManyToOne(() => User)
-    user:User
-
     @ManyToOne(() => Course)
     course: Course
 
@@ -18,5 +15,8 @@ export class Comments{
 
     @Column({type: 'int', default:10})
     assessment: number
+
+    @ManyToOne(() => User, (user) => user.comments)
+    user: User;
 
 }

@@ -1,6 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn, ManyToMany, OneToMany } from "typeorm"
 import { UserRole } from "../../../enums/users-roles"
 import { UserCourse } from '../../user-course/entities/user-course.entity'
+import { Comments } from "src/core/comment/entities/comment.entity"
 
 @Entity('users')
 export class User {
@@ -21,4 +22,7 @@ export class User {
 
     @Column({ type: 'enum', enum: UserRole, default: UserRole.FREE})
     role: UserRole
+
+    @OneToMany(() => Comments, (comments) => comments.user)
+    comments: Comments[];
 }
