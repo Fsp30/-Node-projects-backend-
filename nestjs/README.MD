@@ -1,7 +1,10 @@
+## 📜 Ideia final
+Estou desenvolvendo esse projeto, pois tenho interesse em de fato ter uma plataforma de ensino de programação totalmente gratuita, esse repo será somente a base, o projeto mais elaborado ficará em um repo privado (no momento). Será algo que vai demorar a sair, até porque estou trabalhando sozinho (aceito ajuda rsrs). E como tenho outro emprego não consigo focar totalmente nesses projetos do git, espero que as únicas duas pessoas que estão ansiosas pelo projeto entendam a demora.
+
 # Plataforma de Ensino - Backend (NestJS)
 
 ## 📌 Sobre o Projeto
-Este repositório contém a API backend para uma plataforma fictícia de ensino voltada para tecnologia. O projeto está sendo desenvolvido utilizando **NestJS** e será expandido ao longo do tempo com novas funcionalidades.
+Este repositório contém a API backend para uma plataforma fictícia de ensino voltada para tecnologia. O projeto está sendo desenvolvido utilizando **NestJS** e será expandido ao longo do tempo com novas funcionalidades. 
 
 ## 🚀 Tecnologias Utilizadas
 - **NestJS** - Framework para Node.js
