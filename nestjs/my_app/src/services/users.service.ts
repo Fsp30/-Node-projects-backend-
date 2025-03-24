@@ -3,15 +3,23 @@ import { User } from "src/core/users/entities/user.entity";
 import { UserRepository } from "src/core/users/repositories/user.repository";
 import { CreateUserDto } from "src/dto/create-user.dto";
 import { UpdateUserDto } from "src/dto/update-user.dto";
+import { EmailService } from "./email.service.interface";
 
 @Injectable()
 export class UsersService {
   constructor(
     private readonly userRepository: UserRepository,
+    private readonly emailService: EmailService,
   ) {}
 
   async createUser(createUserDto: CreateUserDto): Promise<User> {
-    return this.userRepository.createUser(createUserDto)
+    const user = this.userRepository.createUser(createUserDto)
+    await this.emailService.sendMail(
+      (await user).email,
+      'Seja muito bem vindo!',
+      'Olá, estamos contentes que você decidiu se cadastrar em nossa plataforma, fique a vontade para consumir todo o conteúdo presente nela'
+    )
+    return user
   }
 
   async getAllUsers(): Promise<User[]> {

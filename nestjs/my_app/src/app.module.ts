@@ -21,6 +21,7 @@ import { ProgressLessonModule } from './modules/progress-lesson.module';
 import { TeacherModule } from './modules/teacher.module';
 import { UserCourseModule } from './modules/user-course.module';
 import { UserModule } from './modules/user.module';
+import { EmailModule } from './modules/email.module';
 
 
 @Module({
@@ -46,7 +47,8 @@ import { UserModule } from './modules/user.module';
     ProgressLessonModule,
     TeacherModule,
     UserCourseModule,
-    UserModule
+    UserModule,
+    EmailModule
   ],
   controllers: [AppController],
   providers: [AppService]
